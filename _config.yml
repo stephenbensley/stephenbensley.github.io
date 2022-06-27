@@ -18,6 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+remote_theme: "mmistakes/jekyll-theme-basically-basic"
+
 title: Stephen Bensley
 email: stephen.e.bensley@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -30,9 +32,12 @@ twitter_username: bensley_stephen
 github_username:  stephenbensley
 
 # Build settings
-theme: jekyll-theme-basically-basic
-plugins:
+plugins: # previously gems
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,3 +58,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
